@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>MY LIBRARY</h1>
+    <form action="submit" id="listBooks">
+        <button type="submit">Exibir lista de Livros</button><br>
+        <textarea name="bookList" id="bookList" cols="75" rows="10"></textarea>
+    </form><br>
+    <form action="submit" id="insertBook">
+        <label for="bookName">Título do Livro</label>
+        <input type="text" name="bookName" class= "inputs" id="bookName" placeholder="Título do Livro" value="O Peregrino" required>
+        <label for="editorName">Editora</label>
+        <input type="text" name="editorName" class= "inputs" id="editorName" placeholder="Editora" value="Jardim dos Livros" required>
+        <label for="linkPic">Link Imagem do Livro</label>
+        <input type="text" name="linkPic" class= "inputs" id="linkPic" placeholder="Link da imagem" value="https://images-na.ssl-images-amazon.com/images/I/A1hBhoEX9EL.jpg" required>
+        <label for="authorName">Autores</label>
+        <input type="text" name="authorName" class= "inputs" id="authorName" placeholder="Autor(es)" value="John Bunyan" required>
+        <button type="submit">Cadastrar Novo Livro</button>
+    </form><br>
+    <form action="submit" id="editBook">
+        <label for="bookId">Título do Livro</label>
+        <input type="text" name="bookId" class= "inputs" id="bookId" placeholder="Id do Livro a modificar" value="" required>
+        <label for="bookName">Título do Livro</label>
+        <input type="text" name="bookName" class= "inputs" id="bookName" placeholder="Título do Livro" value="" required>
+        <label for="editorName">Editora</label>
+        <input type="text" name="editorName" class= "inputs" id="editorName" placeholder="Editora" value="" required>
+        <label for="linkPic">Link Imagem do Livro</label>
+        <input type="text" name="linkPic" class= "inputs" id="linkPic" placeholder="Link da imagem" value="" required>
+        <label for="authorName">Autores</label>
+        <input type="text" name="authorName" class= "inputs" id="authorName" placeholder="Autor(es)" value="" required>
+        <button type="submit">Editar Livro</button>
+    </form><br>
+    <form action="submit" id="seeCover">
+        <select name="list" id="list" style="width: 180px">Lista de 
+        <!-- <option value="">TEste</option> -->
+        </select>
+        <button type="submit">Ver Capa</button>
+    </form>
+    <button type="submit" id="delBook">Deletar Livro</button>
+    <img src=" " alt="Capa do Livro" id="img">
+    <script src="script.js"></script>
+</body>
+</html>
